@@ -1,0 +1,348 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    margin: 0;
+    width: 320px;
+    height: 480px;
+    position: relative;
+}
+
+body:after {
+    display: none;
+    content: url('../img/play.png') url('../img/brazil.png') url('../img/canada.png') url('../img/count0.png') url('../img/count1.png') url('../img/count2.png') url('../img/count3.png') url('../img/count4.png') url('../img/count5.png') url('../img/europe.png') url('../img/hand.png') url('../img/icon.png') url('../img/logo.png') url('../img/map-black.jpg') url('../img/map-color.jpg') url('../img/mexico.png') url('../img/more.png') url('../img/text1.png') url('../img/text2.png') url('../img/text3.png') url('../img/text4.png');
+}
+
+#rma-widget {
+    width: 320px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    margin-top: -106px;
+}
+
+/***** frame 1 *****/
+#frame-1 {
+    width: 320px;
+    height: 213px;
+    position: relative;
+    background: url('../img/map-black.jpg') no-repeat;
+}
+#frame-1 #section-1 {
+    background: url('../img/text1.png') no-repeat;
+    width: 285px;
+    height: 53px;
+    margin: 0 auto;
+    top: 30%;
+    position: relative;
+    position: relative;
+    -webkit-animation: fadeOut 2s ease-in-out 3s; 
+    animation: fadeOut 2s ease-in-out 3s; 
+     -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+    
+}
+#frame-1 #section-2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-in-out 5s; 
+    animation: fadeIn 2s ease-in-out 5s; 
+     -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+}
+#frame-1 #section-2 #text {
+    background: url('../img/text2.png') no-repeat;
+    width: 224px;
+    height: 35px;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+}
+#frame-1 #section-2 #play {
+    width: 100%;
+    height: 50%;
+    top: 22%;
+    position: relative;
+}
+#frame-1 #section-2 #play #img{
+    background: url('../img/play.png') no-repeat;
+    width: 175px;
+    height: 31px;
+    margin: 40px auto;
+}
+
+/***** frame 2 *****/
+#frame-2 {
+    width: 320px;
+    height: 213px;
+    position: relative;
+    display: none;
+}
+
+/***** frame 3 *****/
+#frame-3 {
+    width: 320px;
+    height: 213px;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    -webkit-animation: fadeIn 2s ease-in-out; 
+    animation: fadeIn 2s ease-in-out; 
+     -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+}
+#frame-3 #overlay {
+    opacity: 0.8;
+    background: black;
+    width: 325px;
+    height: 213px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#frame-3 #logo {
+    background: url('../img/logo.png') no-repeat;
+    width: 155px;
+    height: 25px;
+    margin: 30px auto 0 auto;
+    position: relative;
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-in-out 2s; 
+    animation: fadeIn 2s ease-in-out 2s; 
+     -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+    z-index: 20;
+    float: none;
+}
+#frame-3 #text {
+    background: url('../img/text4.png') no-repeat;
+    width: 270px;
+    height: 63px;
+    margin: 20px auto 0 auto;
+    position: relative;
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-in-out 2s; 
+    animation: fadeIn 2s ease-in-out 2s; 
+     -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+    z-index: 20;
+}
+#frame-3 #more {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-in-out 2s; 
+    animation: fadeIn 2s ease-in-out 2s; 
+     -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+    z-index: 20;
+}
+#frame-3 #more #img {
+    background: url('../img/more.png') no-repeat;
+    width: 139px;
+    height: 25px;
+    margin: 170px auto 0 auto;
+}
+
+/***** game css *****/
+#game-container {
+    width: 320px;
+    height: 213px;
+    border: 1px solid black;
+    position: relative;
+    background: url('../img/map-color.jpg') no-repeat;
+}
+
+.icon-draggable {
+    background: url('../img/icon.png') no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 60px;
+    left: 25px
+}
+.usa-icon {
+    background: url('../img/icon.png') no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 60px;
+    left: 25px
+}
+#game-container #hand {
+    background: url('../img/hand.png') no-repeat;
+    width: 27px;
+    height: 23px;
+    position: absolute;
+    top: 75px;
+    left: 5px;
+    -webkit-animation: leftright 4s linear;
+    animation: leftright 4s linear;
+}
+#game-container #text {
+    width: 214px;
+    height: 44px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 105px;
+    left: 50%;
+    margin-left: -107px;
+    background: url('../img/text3.png') no-repeat;
+    -webkit-animation: fadeOut 2s ease-in-out 2s; 
+    animation: fadeOut 2s ease-in-out 2s; 
+     -webkit-animation-fill-mode: forwards; 
+    animation-fill-mode: forwards; 
+}
+
+.region-1 {
+    width: 98px;
+    height: 55px;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
+.region-2 {
+    width: 40px;
+    height: 26px;
+    position: absolute;
+    top: 77px;
+    left: 8px;
+}
+.region-3 {
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    top: 112px;
+    left: 64px;
+}
+.region-4 {
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 128px;
+}
+.region-5 {
+    width: 68px;
+    height: 52px;
+    position: absolute;
+    top: 47px;
+    left: 250px;
+}
+
+.canada { display: none; background: url('../img/canada.png')  no-repeat; width: 100%; height: 100%; }
+.mexico { display: none; background: url('../img/mexico.png')  no-repeat; width: 100%; height: 100%; }
+.brazil { display: none; background: url('../img/brazil.png')  no-repeat; width: 100%; height: 100%; }
+.europe { display: none; background: url('../img/europe.png')  no-repeat; width: 100%; height: 100%; }
+.china  { display: none; background: url('../img/china.png')  no-repeat; width: 100%; height: 100%; }
+
+#count {
+    margin: 165px auto 0 auto;
+    width: 39px;
+    height: 17px;
+}
+#count .count0 { background: url('../img/count0.png')  no-repeat; width: 100%; height: 100%; }
+#count .count1 { background: url('../img/count1.png')  no-repeat; width: 100%; height: 100%; }
+#count .count2 { background: url('../img/count2.png')  no-repeat; width: 100%; height: 100%; }
+#count .count3 { background: url('../img/count3.png')  no-repeat; width: 100%; height: 100%; }
+#count .count4 { background: url('../img/count4.png')  no-repeat; width: 100%; height: 100%; }
+#count .count5 { background: url('../img/count5.png')  no-repeat; width: 100%; height: 100%; }
+
+
+
+
+
+/***** keyframes *****/
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        height: 100%;
+    } 
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes leftright {
+    0% {
+        top: 75px;
+        left: 5px;
+    }
+    25% {
+        top: 55px;
+        left: 140px
+    }
+    50% {
+        top: 75px;
+        left: 5px;
+    }
+    75% {
+        top: 55px;
+        left: 140px
+    }
+    100% {
+        top: 75px;
+        left: 5px;
+    }
+}
+@keyframes leftright {
+    0% {
+        top: 75px;
+        left: 5px;
+    }
+    25% {
+        top: 55px;
+        left: 140px
+    }
+    50% {
+        top: 75px;
+        left: 5px;
+    }
+    75% {
+        top: 55px;
+        left: 140px;
+    }
+    100% {
+        top: 75px;
+        left: 5px;
+    }
+}
