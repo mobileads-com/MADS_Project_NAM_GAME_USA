@@ -184,6 +184,7 @@ var nam = function () {
     
     var play = document.getElementById('play');
     play.addEventListener('click', function () {
+        _this.sdk.tracker('E', 'nam_play');
         document.getElementById('frame-1').style.display = 'none';
         document.getElementById('frame-2').style.display = 'block';
     });
@@ -227,7 +228,6 @@ nam.prototype.game = function () {
     $(rma).find(".icon-draggable").draggable({
         start : function () {
             document.getElementById('hand').style.display = 'none';
-            _this.sdk.tracker('E', 'nam_play');
         },
         stop: function() {
             $(this).css({

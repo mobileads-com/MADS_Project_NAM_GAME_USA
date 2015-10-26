@@ -32,8 +32,8 @@ body:after {
     margin: 0 auto;
     top: 32%;
     background: url('../img/text1.png') no-repeat;
-    -webkit-animation: fadeOut 2s ease-in-out 3s; 
-    animation: fadeOut 2s ease-in-out 3s; 
+    -webkit-animation: fadeOut 2s ease-in-out 1s; 
+    animation: fadeOut 2s ease-in-out 1s; 
      -webkit-animation-fill-mode: forwards; 
     animation-fill-mode: forwards; 
     
@@ -43,8 +43,8 @@ body:after {
     height: 100%;
     position: relative;
     opacity: 0;
-    -webkit-animation: fadeIn 2s ease-in-out 5s; 
-    animation: fadeIn 2s ease-in-out 5s; 
+    -webkit-animation: fadeIn 2s ease-in-out 3s; 
+    animation: fadeIn 2s ease-in-out 3s; 
      -webkit-animation-fill-mode: forwards; 
     animation-fill-mode: forwards; 
 }
